@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Date TextView -->
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDate">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Checkboxes for Student Attendance -->
+            <CheckBox
+                android:id="@+id/checkboxStudent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student 1" />
+
+            <CheckBox
+                android:id="@+id/checkboxStudent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student 2" />
+
+            <!-- Add more CheckBoxes for each student -->
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmitAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Attendance" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
